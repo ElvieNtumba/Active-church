@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - The Active Church</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <!-- Navbar -->
+    <header class="bg-white shadow">
+      <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="text-2xl font-bold">
+          <span class="italic">THE</span><span class="font-semibold">Active</span> CHURCH
+        </div>
+        <nav class="space-x-6 text-sm font-medium">
+            <a href="index.html">HOME</a>
+          <a href="#">OUR VISION</a>
+          <a href="#">GIVE</a>
+          <a href="#">WATCH LIVE</a>
+          <a href="#" class="text-red-600 border-b-2 border-red-600">CONTACT US</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="bg-black text-white text-center py-16">
+      <h1 class="text-4xl font-bold mb-3">Contact Us</h1>
+      <p>We'd love to hear from you! Reach out with questions, prayer requests, or just to say hello.</p>
+    </section>
+
+    <!-- Main Contact Section -->
+    <section class="py-16">
+      <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10">
+        <!-- Contact Form -->
+        <div class="bg-white p-6 rounded shadow">
+          <h2 class="text-xl font-bold mb-2">Send us a Message</h2>
+          <p class="text-sm mb-6">Fill out the form and we’ll get back to you as soon as possible</p>
+          <form class="space-y-4">
+            <div class="flex gap-4">
+              <div class="w-1/2">
+                <label class="text-sm">First Name</label>
+                <input type="text" placeholder="John" class="w-full p-2 border rounded" />
+              </div>
+              <div class="w-1/2">
+                <label class="text-sm">Last Name</label>
+                <input type="text" placeholder="Doe" class="w-full p-2 border rounded" />
+              </div>
+            </div>
+            <div>
+              <label class="text-sm">Email</label>
+              <input type="email" placeholder="john@example.com" class="w-full p-2 border rounded" />
+            </div>
+            <div>
+              <label class="text-sm">Phone (Optional)</label>
+              <input type="text" placeholder="(000) 000-000" class="w-full p-2 border rounded" />
+            </div>
+            <div>
+              <label class="text-sm">Message</label>
+              <textarea rows="5" placeholder="Tell us how we can help you..." class="w-full p-2 border rounded"></textarea>
+            </div>
+            <button type="submit" class="bg-black text-white px-6 py-2 rounded hover:bg-gray-800">
+              Send
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="bg-white p-6 rounded shadow space-y-8">
+          <div>
+            <h3 class="text-lg font-bold mb-4">Get in Touch</h3>
+            <div class="flex items-start gap-3 mb-4">
+              <div class="text-red-600 text-xl">📍</div>
+              <div>
+                <p class="font-semibold">Address</p>
+                <p>72 Marlborough rd<br />Springfield, Johannesburg</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="text-red-600 text-xl">✉</div>
+              <div>
+                <p class="font-semibold">Email</p>
+                <p>info@theactivechurch.org</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p class="font-semibold mb-2">Follow Us</p>
+            <div class="flex gap-4 text-2xl">
+              <a href="#" class="text-blue-600">🔵</a>
+              <a href="#" class="text-pink-500">🟣</a>
+              <a href="#" class="text-red-600">🔴</a>
+            </div>
+          </div>
+
+          <div>
+            <p class="font-semibold mb-2">Find Us</p>
+            <div class="w-full h-48 bg-gray-200 rounded overflow-hidden">
+              <iframe
+                class="w-full h-full"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?q=72%20Marlborough%20rd,%20Johannesburg&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
