@@ -12,6 +12,10 @@
             padding: 15px 40px;
             background-color: white;
             border-bottom: 2px solid #ccc;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
         }
 
         .logo img {
@@ -664,4 +668,333 @@ form button:hover {
   border: none;
   border-radius: 0.4rem;
   margin-top: 0.5rem;
+}
+
+
+/* our vision */
+
+.ourvisionblack{
+    background-color: #000;
+    color: #ffffff;
+    height: 30vh;
+    text-align: center;
+    margin:auto;
+    padding: 5% 0;
+}
+
+.main-div{
+    padding: 0 5%;
+}
+
+.ourvision{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.wordvision{
+    width: 40%;
+    text-align: center;
+    height: 40vh;
+    padding: 10%;
+}
+
+.descriptionouvision{
+    width: 60%;
+}
+
+.banner2{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    /* border: 1px solid; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.kidschurchimage {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.kidschurch{
+    width: 50%;
+    padding: 10%;
+}
+
+.kidschurch h1{
+    margin-bottom: 6%;
+}
+
+.banner3{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.youthimage{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.youth{
+    width: 50%;
+    padding: 10%;
+}
+
+.youth h1{
+    margin-bottom: 6%;
+}
+
+.kidschurchimage img,
+.youthimage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.youthimage img {
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+}
+
+.webelive{
+    width: 100%;
+    text-align: center;
+    height: 25vh;
+    /* border: 1px solid; */
+    padding: 5% 0;
+}
+.banner4{
+   padding: 2%;
+}
+.yourlife , .people {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.Scripture,
+.Salvation,
+.Community,
+.Mission {
+    width: 50%;
+    padding: 2%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.Scripture h2,
+.Salvation h2,
+.Community h2,
+.Mission h2{
+    margin-bottom: 2%;
+}
+
+.Scripture , .Community{
+    margin-right: 2%;
+}
+
+.Salvation span , .Mission span{
+    color: #ffff;
+}
+
+.leadership-section {
+  padding: 60px 20px;
+}
+
+.leadership-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.card {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 16px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+}
+
+.pastors-image {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.pastors-name {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+/* watch live */
+
+.container {
+  background: white;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  color: #0044cc;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.countdown-container {
+  position: relative;
+  background-image: url('images/Banner.png'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time {
+  display: flex;
+  gap: 20px;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.time div {
+  display: flex;
+  flex-direction: column;
+}
+
+.time small {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.youtube {
+  background-color: #ff0000;
+}
+
+.facebook {
+  background-color: #1877f2;
+}
+
+.watch-section {
+  background-color: #1c1c1c;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.watch-section h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.watch-section p {
+  font-size: 16px;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+.platforms {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.platform {
+  max-width: 300px;
+}
+
+.icon-circle {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-circle i {
+  font-size: 32px;
+  color: red; /* Default for YouTube */
+}
+
+.platform:nth-child(2) .icon-circle i {
+  color: #1877f2; /* Facebook blue */
+}
+
+.platform h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.platform p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.platform a.icon-circle {
+  text-decoration: none;
+}
+
+.platform a.icon-circle:hover {
+  opacity: 0.8; /* Optional hover effect */
 }
