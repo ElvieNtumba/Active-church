@@ -363,76 +363,74 @@
   transform: translateY(-2px);
 }
 
-.footer-content {
-  background: #000;
-  padding: 80px 20px;
+.site-footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: left;
 }
 
-.footer-container {
-  max-width: 1200px;
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1100px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 80px;
 }
 
-.footer {
-  background-color: #000000;
-  color: #ffffff;
-  padding: 60px 40px 30px 40px;
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px 0;
 }
 
-.footer-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 80px;
-  margin-bottom: 50px;
-}
-
-.footer-section h2 {
-  font-size: 24px;
-  font-weight: normal;
-  margin-bottom: 25px;
-  letter-spacing: 1px;
-}
-
-.footer-section p,
-.footer-section a {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #ffffff;
-  text-decoration: none;
-  margin-bottom: 8px;
-  display: block;
-}
-
-.footer-section a:hover {
-  text-decoration: underline;
-}
-
-.logo-section .logo {
-  font-size: 28px;
+.footer-column h4 {
   font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 6px;
+}
+
+.logo {
+  font-family: 'Georgia', serif;
+  font-size: 1.4em;
+  line-height: 1.4;
+}
+
+.active-text {
   font-style: italic;
-  margin-bottom: 20px;
-  letter-spacing: 2px;
+  font-weight: 400;
 }
 
-.logo-section .tagline {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 0;
+hr {
+  border: none;
+  border-top: 1px solid #444;
+  margin: 30px auto 20px;
+  width: 90%;
 }
 
-.copyright {
+footer p {
+  margin: 0;
+}
+
+footer .copyright {
   text-align: center;
-  font-size: 14px;
-  color: #ffffff;
-  border-top: 1px solid #333333;
-  padding-top: 20px;
-  margin-top: 30px;
+  font-size: 0.9em;
+  color: #ccc;
+  margin-top: 10px;
 }
-
+.footer-logo {
+  width: 180px;
+  margin-bottom: 20px;
+}
 @media (max-width: 768px) {
   .footer-content {
     grid-template-columns: 1fr;
@@ -754,140 +752,137 @@ form button:hover {
 
 /* our vision */
 
-.ourvisionblack {
-  background-color: #000;
-  color: #ffffff;
-  height: 30vh;
-  text-align: center;
-  margin: auto;
-  padding: 5% 0;
+.ourvisionblack{
+    background-color: #000;
+    color: #ffffff;
+    height: 30vh;
+    text-align: center;
+    margin:auto;
+    padding: 5% 0;
 }
 
-.main-div {
-  padding: 0 5%;
+.main-div{
+    padding: 0 5%;
 }
 
-.ourvision {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
+.ourvision{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
-.wordvision {
-  width: 40%;
-  text-align: center;
-  height: 40vh;
-  padding: 10%;
+.wordvision{
+    width: 40%;
+    text-align: center;
+    height: 40vh;
+    padding: 10%;
 }
 
-.descriptionouvision {
-  width: 60%;
+.descriptionouvision{
+    width: 60%;
 }
 
-.banner2 {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  height: 75vh;
-  /* border: 1px solid; */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+.banner2{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    /* border: 1px solid; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .kidschurchimage {
-  width: 50%;
-  margin: 0 auto;
+    width: 50%;
+    margin: 0 auto;
 }
 
-.kidschurch {
-  width: 50%;
-  padding: 10%;
+.kidschurch{
+    width: 50%;
+    padding: 10%;
 }
 
-.kidschurch h1 {
-  margin-bottom: 6%;
+.kidschurch h1{
+    margin-bottom: 6%;
 }
 
-.banner3 {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  height: 75vh;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+.banner3{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-.youthimage {
-  width: 50%;
-  margin: 0 auto;
+.youthimage{
+    width: 50%;
+    margin: 0 auto;
 }
 
-.youth {
-  width: 50%;
-  padding: 10%;
+.youth{
+    width: 50%;
+    padding: 10%;
 }
 
-.youth h1 {
-  margin-bottom: 6%;
+.youth h1{
+    margin-bottom: 6%;
 }
 
 .kidschurchimage img,
 .youthimage img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .youthimage img {
-  width: 100%;
-  height: 75vh;
-  object-fit: cover;
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
 }
 
-.webelive {
-  width: 100%;
-  text-align: center;
-  height: 25vh;
-  /* border: 1px solid; */
-  padding: 5% 0;
+.webelive{
+    width: 100%;
+    text-align: center;
+    height: 25vh;
+    /* border: 1px solid; */
+    padding: 5% 0;
 }
-.banner4 {
-  padding: 2%;
+.banner4{
+   padding: 2%;
 }
-.yourlife,
-.people {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  height: 20vh;
+.yourlife , .people {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
 }
 
 .Scripture,
 .Salvation,
 .Community,
 .Mission {
-  width: 50%;
-  padding: 2%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    width: 50%;
+    padding: 2%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .Scripture h2,
 .Salvation h2,
 .Community h2,
-.Mission h2 {
-  margin-bottom: 2%;
+.Mission h2{
+    margin-bottom: 2%;
 }
 
-.Scripture,
-.Community {
-  margin-right: 2%;
+.Scripture , .Community{
+    margin-right: 2%;
 }
 
-.Salvation span,
-.Mission span {
-  color: #ffff;
+.Salvation span , .Mission span{
+    color: #ffff;
 }
 
 .leadership-section {
@@ -1202,4 +1197,93 @@ form button:hover {
   background-color: red;
   border-radius: 50%;
   margin-right: 0.5rem;
+}
+
+
+.body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background: #fff;
+  color: #222;
+}
+
+.give-section {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.qr-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.green-text {
+  color: #2a9d8f;
+}
+
+.qr-image {
+  width: 120px;
+  margin: 10px 0;
+}
+
+.powered-by {
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.payment-logos {
+  max-width: 100%;
+  height: auto;
+}
+
+.eft-section, .debit-order-section {
+  text-align: left;
+  margin-top: 40px;
+}
+
+.eft-section h3,
+.debit-order-section h3 {
+  font-style: italic;
+  color: #333;
+}
+
+.eft-section p,
+.debit-order-section p {
+  line-height: 1.6;
+}
+
+.why-we-give {
+  text-align: center;
+  margin: 60px auto;
+  max-width: 700px;
+  padding: 0 20px;
+}
+
+.why-we-give h2 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.why-we-give .scripture {
+  color: red;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.why-we-give .reference {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.why-we-give .explanation {
+  color: #444;
+  line-height: 1.6;
+  font-size: 1em;
 }
