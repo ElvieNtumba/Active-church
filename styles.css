@@ -788,8 +788,7 @@ form button:hover {
     width: 100%;
     justify-content: center;
     align-items: center;
-    height: 75vh;
-    /* border: 1px solid; */
+    height: 89vh;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
@@ -990,6 +989,14 @@ form button:hover {
   gap: 20px;
 }
 
+.events-grid{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    justify-content:center ;
+      padding: 10px 20px;
+}
+
 .btn {
   display: flex;
   align-items: center;
@@ -1108,7 +1115,7 @@ form button:hover {
 .give-section-div{
   width: 100%;
   height: 270px;
-  border: 1px solid #000;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   background-color: #000;
 }
 .give-section-div h1{
@@ -1153,12 +1160,12 @@ form button:hover {
 
 .card {
   flex: 1 1 300px;
-  border: 1px solid #ddd;
   border-radius: 8px;
   padding: 2rem 1rem;
   text-align: center;
   max-width: 400px;
   box-sizing: border-box;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .icon {
@@ -1199,12 +1206,17 @@ form button:hover {
   margin-right: 0.5rem;
 }
 
+.mainGive{
+  background-color: #eee;
+  padding: 2%;
+}
 
 .body {
   font-family: Arial, sans-serif;
-  margin: 40px;
+  margin: 40px 200px;
   background: #fff;
   color: #222;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .give-section {
