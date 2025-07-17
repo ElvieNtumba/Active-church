@@ -1237,7 +1237,7 @@ form button:hover {
 }
 
 .qr-image {
-  width: 120px;
+  width: 250px;
   margin: 10px 0;
 }
 
@@ -1248,8 +1248,16 @@ form button:hover {
 }
 
 .payment-logos {
-  max-width: 100%;
+  max-width: 30%;
   height: auto;
+}
+
+.main_give_div{
+  margin: auto;
+}
+
+.eft-section{
+  width: 50%;
 }
 
 .eft-section, .debit-order-section {
@@ -1298,4 +1306,48 @@ form button:hover {
   color: #444;
   line-height: 1.6;
   font-size: 1em;
+}
+
+.container {
+  max-width: 600px;
+  background-color: #fff;
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #007a3d;
+  margin-bottom: 30px;
+}
+
+h1 span {
+  color: #2e2e2e;
+  font-weight: bold;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  color: #007a3d;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.section ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+.section ol li {
+  background-color: #007a3d;
+  color: white;
+  padding: 12px 15px;
+  border-radius: 5px;
+  margin-bottom: 3px;
 }
