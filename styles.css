@@ -98,9 +98,14 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.btn.primary {
+.btn.primary{
   background-color: white;
   color: black;
+}
+
+.hero-buttons .icon{
+  background-color: white;
+  color: black !important;
 }
 
 .btn.primary:hover {
@@ -246,7 +251,7 @@
             grid-template-columns: repeat(2, 1fr);
             gap: 60px;
             max-width: 900px;
-            margin: 0 auto;
+            margin: 20px auto;
         }
         
         .event-card {
@@ -291,31 +296,6 @@
             font-size: 14px;
             color: #000;
         }
-
-        @media (max-width: 768px) {
-            .pillars-container {
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
-            
-            .events-container {
-                grid-template-columns: 1fr;
-                gap: 30px;
-            }
-            
-            .welcome-title, .events-title {
-                font-size: 36px;
-            }
-            
-            .welcome-section {
-                padding: 60px 20px;
-            }
-        }
-
-
-
-
-
 
 .cta-section {
   background: linear-gradient(135deg, #333 0%, #555 100%);
@@ -437,16 +417,6 @@ footer .copyright {
   width: 180px;
   margin-bottom: 20px;
 }
-@media (max-width: 768px) {
-  .footer-content {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .footer {
-    padding: 40px 20px 20px 20px;
-  }
-}
 
 .social-icons {
   display: flex;
@@ -520,77 +490,11 @@ footer .copyright {
   font-size: 0.9rem;
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    height: auto;
-    padding: 20px;
-  }
-
-  .nav-links {
-    margin-top: 15px;
-    gap: 20px;
-  }
-
-  .banner {
-    flex-direction: column;
-    height: auto;
-    padding: 40px 20px;
-  }
-
-  .hero-text {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  .hero-text h1 {
-    font-size: 32px;
-  }
-
-  .welcome-section h1 {
-    font-size: 2.5rem;
-  }
-
-  .welcome-section p {
-    font-size: 1.1rem;
-    padding: 0 20px;
-  }
-
-  .features-grid {
-    grid-template-columns: 1fr;
-    gap: 50px;
-  }
-
-  .events-section h2 {
-    font-size: 2.2rem;
-  }
-
-  .events-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .cta-section h1 {
-    font-size: 2.5rem;
-  }
-
-  .cta-section p {
-    font-size: 1.1rem;
-  }
-
-  .footer-container {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .brand-section h2 {
-    font-size: 2rem;
-  }
-}
 
 /* conctact-styles */
 
 /* Container */
-.container {
+.containrs {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
@@ -962,6 +866,8 @@ form button:hover {
   margin-bottom: 20px;
 }
 
+
+
 .overlay {
   background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
@@ -1314,7 +1220,7 @@ form button:hover {
   font-size: 1em;
 }
 
-.container {
+.containers {
   max-width: 600px;
   background-color: #fff;
   margin: auto;
