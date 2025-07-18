@@ -28,139 +28,101 @@
     </header>
 
     <!-- Hero -->
-    <div class="ourvisionblack">
-      <h1>Contact Us</h1>
-      <h3>
+    <div class="contactblack">
+      <h1 class="contactblack-h1">Contact Us</h1>
+      <h3 class="contactblack-h3">
         We'd love to hear from you! <br>
         Reach out with questions, prayer requests,
         or just to say hello.
       </h3>
     </div>
 
-    <!-- Main Contact Section -->
-    <section class="py-16">
-      <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10">
-        <!-- Contact Form -->
-        <div class="bg-white p-6 rounded shadow">
-          <h2 class="text-2xl font-bold mb-4 text-black">Send us a Message</h2>
-          <p class="text-sm mb-6">
-            Fill out the form and we’ll get back to you as soon as possible
-          </p>
-          <form class="space-y-4 text-black">
-            <div class="flex gap-4 text-black">
-              <div class="w-1/2">
-                <label class="text-sm text-black">First Name</label>
-                <input
-                  type="text"
-                  placeholder="John"
-                  class="w-full p-2 border rounded"
-                />
-              </div>
-              <div class="w-1/2">
-                <label class="text-sm text-black">Last Name</label>
-                <input
-                  type="text"
-                  placeholder="Doe"
-                  class="w-full p-2 border rounded"
-                />
-              </div>
-            </div>
-            <div>
-              <label class="text-sm text-black">Email</label>
-              <input
-                type="email"
-                placeholder="john@example.com"
-                class="w-full p-2 border rounded"
-              />
-            </div>
-            <div>
-              <label class="text-sm text-black">Phone (Optional)</label>
-              <input
-                type="text"
-                placeholder="(000) 000-000"
-                class="w-full p-2 border rounded"
-              />
-            </div>
-            <div>
-              <label class="text-sm text-black">Message</label>
-              <textarea
-                rows="5"
-                placeholder="Tell us how we can help you..."
-                class="w-full p-2 border rounded"
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              class="bg-black text-white px-6 py-2 rounded hover:bg-gray-800 text-black"
-            >
-              Send
-            </button>
-          </form>
-        </div>
-
-        <!-- Contact Info -->
-        <div class="bg-white p-6 rounded shadow space-y-8">
-          <div>
-            <h3 class="text-2xl text-black font-bold mb-2">Get in Touch</h3>
-
-            <div class="flex items-start gap-3 mb-4">
-              <div class="text-red-600 text-xl"><span class="icon"><i class="fas fa-map-marker-alt"></i></span></div>
-              <div>
-                <p class="font-semibold text-black">Address</p>
-                <p class="text-black">
-                  72 Marlborough rd<br class="text-black" />Springfield,
-                  Johannesburg
+<section class="contact-section">
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <div class="contact-form-wrapper">
+                <h2 class="contact-form-title">Send us a Message</h2>
+                <p class="contact-form-subtitle">
+                    Fill out the form and we’ll get back to you as soon as possible
                 </p>
-              </div>
+                <form class="contact-form">
+                    <div class="contact-name-row">
+                        <div class="contact-first-name">
+                            <label>First Name</label>
+                            <input type="text" placeholder="John" />
+                        </div>
+                        <div class="contact-last-name">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Doe" />
+                        </div>
+                    </div>
+                    <div class="contact-email">
+                        <label>Email</label>
+                        <input type="email" placeholder="john@example.com" />
+                    </div>
+                    <div class="contact-phone">
+                        <label>Phone (Optional)</label>
+                        <input type="text" placeholder="(000) 000-000" />
+                    </div>
+                    <div class="contact-message">
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="Tell us how we can help you..."></textarea>
+                    </div>
+                    <button type="submit" class="contact-submit-btn">Send</button>
+                </form>
             </div>
-            <div class="flex items-start gap-3">
-              <div class="text-red-600 text-xl"><span class="icon"><i class="fas fa-envelope"></i></span></div>
-              <div>
-                <p class="font-semibold text-black">Email</p>
-                <p class="text-black">info@theactivechurch.org</p>
-              </div>
-            </div>
-          </div>
 
-          <div>
-           <h3 class="text-black">Follow Us</h3>
+            <!-- Contact Info -->
+            <div class="contact-info-wrapper">
+                <div class="contact-info">
+                    <h3 class="contact-info-title">Get in Touch</h3>
 
-            <div class="social-icons">
-              <a href="https://www.facebook.com/theActiveChurch" class="facebook"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a href="https://instagram.com" class="instagram"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="https://www.youtube.com/@TheActiveChurch" class="youtube"
-                ><i class="fab fa-youtube"></i
-              ></a>
-            </div>
-          </div>
+                    <div class="contact-address">
+                        <div>
+                            <p class="contact-label">Address</p>
+                            <p><i class="fas fa-map-marker-alt"></i>  72 Marlborough rd<br />Springfield, Johannesburg</p>
+                        </div>
+                    </div>
 
-          <div>
-            <p class="font-semibold mb-2">Find Us</p>
-            <div class="w-full h-48 bg-gray-200 rounded overflow-hidden">
-              <iframe
-                class="w-full h-full"
-                frameborder="0"
-                scrolling="no"
-                marginheight="0"
-                marginwidth="0"
-                src="https://maps.google.com/maps?q=72%20Marlborough%20rd,%20Johannesburg&t=&z=13&ie=UTF8&iwloc=&output=embed"
-              ></iframe>
+                    <div class="contact-email-info">
+                        <div>
+                            <p class="contact-label">Email</p>
+                            <p><i class="fas fa-envelope"></i>  info@theactivechurch.org</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-social">
+                    <h3>Follow Us</h3>
+                  <div class="contact-social-icons">
+                    <a href="https://www.facebook.com/theActiveChurch" target="_blank" class="facebook" ><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/theactivechurch_" target="_blank" class="instagram" ><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@TheActiveChurch" target="_blank" class="youtube" ><i class="fab fa-youtube"></i></a>
+                  </div>
+
+                </div>
+
+                <div class="contact-map-section">
+                    <p class="contact-label">Find Us</p>
+                    <div class="contact-map">
+                        <iframe
+                            class="contact-map-frame"
+                            frameborder="0"
+                            scrolling="no"
+                            marginheight="0"
+                            marginwidth="0"
+                            src="https://maps.google.com/maps?q=72%20Marlborough%20rd,%20Johannesburg&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        ></iframe>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-
-      
     </section>
 
   <!-- footer -->
    <footer class="site-footer">
   <div class="footer-content">
-    <div class="footer-column">
+    <div class="footer-column1">
       <img src="images/Vector-1.png" alt="The Active Church Logo" class="footer-logo">
       <p>A Church Raising A New Generation</p>
       <p>A Generation That Will Change This Nation</p>
