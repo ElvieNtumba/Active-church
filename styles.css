@@ -1429,3 +1429,8 @@ h1 span {
     max-width: 600px;
     margin: 0 auto 20px;
 }
+
+.foothr{
+   width: 80%;         /* Adjust the width to control size */
+  margin: 20px auto; 
+}
