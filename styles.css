@@ -791,7 +791,7 @@ form button:hover {
 }
 
 .Salvation span , .Mission span{
-    color: #ffff;
+    color: transparent;
 }
 
 .leadership-section {
