@@ -1375,7 +1375,7 @@ h1 span {
    .hero-buttons {
     display: flex;
     flex-direction: row;      /* keep them side by side */
-    justify-content: center;  /* center the buttons */
+    justify-content: start;  /* center the buttons */
     flex-wrap: wrap;          /* allow wrap if space runs out */
     gap: 10px;
     margin-top: 20px;
