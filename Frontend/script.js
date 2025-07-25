@@ -50,3 +50,43 @@ function closeSidebar() {
     const sidebar = document.querySelector('.sidebar');
     sidebar.style.display = 'none';
   }
+
+   
+document.getElementById("contactForm")
+.addEventListener("submit", async function (e) {
+  e.preventDefault();
+  const formData = new FormData(e.target);
+
+  const contactData = {
+    firstName: formData.get("firstName"),
+    lastName: formData.get("lastName"),
+    email: formData.get("email"),
+    phone: formData.get("phone"),
+    message: formData.get("message"),
+  };
+
+  try {
+    const response = await fetch(
+      "http://localhost:5000/api/contact",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(contactData),
+      }
+    );
+
+    const result = await response.json();
+
+    if (response.ok) {
+      alert(result.message || "Message sent successfully!");
+      e.target.reset(); 
+    } else {
+      alert(result.message || "Error sending message.");
+    }
+  } catch (error) {
+    console.error("Error:", error);
+    alert("Failed to send message. Please try again.");
+  }
+});

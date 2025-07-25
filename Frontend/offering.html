@@ -7,27 +7,61 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-     <header class="navbar">
-      <div class="logo">
-        <img src="images/Vector.png" alt="logo" />
-      </div>
-      <nav class="nav-links">
-        <a href="index.html">HOME</a>
-        <a href="OurVision.html">OUR VISION</a>
-        <a href="#">GIVE</a>
-        <a href="watchlive.html">WATCH LIVE</a>
-        <a href="contactus.html">CONTACT US</a>
-      </nav>
-    </header>
-    <section>
-        <div class="give-section-div">
-          <h1>Give</h1>
-          <p> Your generosity helps us serve our community and spread God's love.<br> 
-Thank you for partnering with us in ministry.</p>
+         <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="images/Vector.png" alt='logo' />
         </div>
+       
+        <nav class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="OurVision.html">OUR VISION</a>
+            <a href="offering.html">GIVE</a>
+            <a href="watchlive.html">WATCH LIVE</a>
+            <a href="ContactUs.html">CONTACT US</a>
+        </nav>
+        <button class="showonmobile" onclick="showSidebar()" aria-label="Open Sidebar" style="background:none; border:none; cursor:pointer;">
+          <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#1f1f1f">
+          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+          </svg>
+      </button>
+        <nav class="sidebar">
+            <ul>
+               <li class="showonmobile">
+                    <a href="#" onclick="closeSidebar()" aria-label="Close Sidebar">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#1f1f1f">
+                        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="dontshowonmobile" >
+                    <a href="index.html" >HOME</a>
+                </li>
+                <li class="dontshowonmobile" >
+                    <a href="OurVision.html" >OUR VISION</a>
+                </li>
+                <li class="dontshowonmobile" >
+                    <a href="offering.html"  >GIVE</a>
+                </li>
+                <li class="dontshowonmobile">
+                    <a href="watchlive.html"   >WATCH LIVE</a>
+                </li>
+                <li class="dontshowonmobile" >
+                    <a href="ContactUs.html" >CONTACT US</a>
+                </li>
+            </ul>
+       </nav>
+    </header>
+    
+    <div class="ourvisionblack">
+      <h1>Give</h1>
+      <h3> Your generosity helps us serve our community and spread God's love. <br>
+Thank you for partnering with us in ministry.</h3>
+    </div>
+    <section>
 
          <section class="ways-to-give">
-    <h2>Ways to Give</h2>
+           <h2>Ways to Give</h2>
     <p class="subheading">Choose the giving method that works best for you</p>
     <div class="cards">
       <div class="card">
@@ -62,6 +96,86 @@ Thank you for partnering with us in ministry.</p>
     </div>
   </section>
     </section>
+  <section class="mainGive">
+    <div class="body">
+      <section class="give-section">
+        <div class="qr-section">
+          <h2><span class="green-text">SCAN. PAY</span> AND <br>ENJOY YOUR DAY.</h2>
+          <img src="images/qrcode.jpeg" alt="QR Code" class="qr-image">
+          <p class="powered-by">THE ACTIVE CHURCH</p>
+          <img src="images/QR-code (1)(1).png" alt="Payment Methods" class="payment-logos">
+        </div>
 
+      <div class="main_give_div">
+        <div class="eft-section">
+          <h3><em>EFT / Direct Deposit</em></h3>
+          <p>If you'd like to give via electronic transfer or direct deposit,<br>
+            please use the bank details below:</p>
+          <p>
+            <strong>Bank Name:</strong> Nedbank<br>
+            <strong>Account Name:</strong> Active Church<br>
+            <strong>Account Number:</strong> 1385041315
+          </p>
+          <p>Kindly use your name as the payment reference.</p>
+        </div>
+        <div class="debit-order-section">
+          <h3><em>DEBIT ORDER</em></h3>
+          <p>If you feel called to give consistently and support the<br>
+            church month-to-month, you can authorize a debit order<br>
+            by completing the following details.</p>
+          </div>
+        </div>
+      </section>
+    </div>  
+
+    
+  </section>  
+  <section class="why-we-give">
+    <h2>Why We Give</h2>
+    <p class="scripture">
+      "Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver."
+    </p>
+    <p class="reference">2 Corinthians 9:7</p>
+    <p class="explanation">
+      Giving is an act of worship and a way to participate in God's work in the world.
+      When we give, we express our trust in God's provision and our commitment to His kingdom.
+    </p>
+  </section>
+  
+          
+ <!-- footer -->
+   <footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-column1">
+      <img src="images/Vector-1.png" alt="The Active Church Logo" class="footer-logo">
+      <p>A Church Raising A New Generation</p>
+      <p>A Generation That Will Change This Nation</p>
+      <p>To God Be The Glory.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li href="OurVision.html">Our Vision</li>
+        <li href="watchlive.html">Service Times</li>
+        <li href="offering.html">Give Online</li>
+        <li href="watchlive.html">Watch Live</li>
+      </ul>
+    </div>
+    
+    <div class="footer-column">
+      <h4>Contact</h4>
+      <p>72 Marlborough rd, Springfield</p>
+      <p>info@theactivechurch.org</p>
+    </div>
+  </div>
+  
+  <hr>
+  <p class="copyright">
+    © 2025 The Active Church. All rights reserved.
+  </p>
+</footer>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
