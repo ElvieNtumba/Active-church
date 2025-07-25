@@ -4,6 +4,45 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.sidebar{
+  display: none;
+  gap: 35px;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.774);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  flex-direction: column;
+  padding: 20px;
+}
+
+.sidebar a, .dontshowonmobile li{
+  width: 100%;
+  /* padding: 1% */
+}
+
+.dontshowonmobile{
+  margin: 9% 0;
+}
+
+.showonmobile{
+    display: none !important;
+  }
+
+.sidebar.active {
+  display: flex;
+}
+
 .navbar {
   display: flex;
   height: 75px;
@@ -23,12 +62,16 @@
   object-fit: contain;
 }
 
+.logo{
+  display: flex;
+}
+
 .nav-links {
   display: flex;
   gap: 30px;
 }
 
-.nav-links a {
+.nav-links a, .sidebar a {
   text-decoration: none;
   color: black;
   font-weight: bold;
@@ -37,7 +80,7 @@
   transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
+.nav-links a:hover ,.sidebar a:hover{
   color: #666;
 }
 
@@ -62,6 +105,12 @@
   color: #fff;
   margin-bottom: 20px;
   line-height: 1.2;
+}
+
+
+.hero-text span{
+  font-weight: bold;
+  color: #fff;
 }
 
 .hero-text h1 span {
@@ -92,9 +141,14 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.btn.primary {
+.btn.primary{
   background-color: white;
   color: black;
+}
+
+.hero-buttons .icon{
+  background-color: white;
+  color: black !important;
 }
 
 .btn.primary:hover {
@@ -240,7 +294,7 @@
             grid-template-columns: repeat(2, 1fr);
             gap: 60px;
             max-width: 900px;
-            margin: 0 auto;
+            margin: 20px auto;
         }
         
         .event-card {
@@ -285,31 +339,6 @@
             font-size: 14px;
             color: #000;
         }
-
-        @media (max-width: 768px) {
-            .pillars-container {
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
-            
-            .events-container {
-                grid-template-columns: 1fr;
-                gap: 30px;
-            }
-            
-            .welcome-title, .events-title {
-                font-size: 36px;
-            }
-            
-            .welcome-section {
-                padding: 60px 20px;
-            }
-        }
-
-
-
-
-
 
 .cta-section {
   background: linear-gradient(135deg, #333 0%, #555 100%);
@@ -363,85 +392,76 @@
   transform: translateY(-2px);
 }
 
-.footer-content {
-  background: #000;
-  padding: 80px 20px;
+.site-footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: left;
 }
 
-.footer-container {
-  max-width: 1200px;
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 80px;
 }
 
-.footer {
-  background-color: #000000;
-  color: #ffffff;
-  padding: 60px 40px 30px 40px;
+.footer-column {
+  margin: 20px 0;
+  width: 25%;
 }
 
-.footer-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 80px;
-  margin-bottom: 50px;
+.footer-column1 {
+  width: 50%;
+  margin: 20px 0;
 }
 
-.footer-section h2 {
-  font-size: 24px;
-  font-weight: normal;
-  margin-bottom: 25px;
-  letter-spacing: 1px;
-}
-
-.footer-section p,
-.footer-section a {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #ffffff;
-  text-decoration: none;
-  margin-bottom: 8px;
-  display: block;
-}
-
-.footer-section a:hover {
-  text-decoration: underline;
-}
-
-.logo-section .logo {
-  font-size: 28px;
+.footer-column h4 {
   font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 6px;
+}
+
+.logo {
+  font-family: 'Georgia', serif;
+  font-size: 1.4em;
+  line-height: 1.4;
+}
+
+.active-text {
   font-style: italic;
-  margin-bottom: 20px;
-  letter-spacing: 2px;
+  font-weight: 400;
 }
 
-.logo-section .tagline {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 0;
+hr {
+  border: none;
+  border-top: 1px solid #444;
+  margin: 30px auto 20px;
+  width: 90%;
 }
 
-.copyright {
+footer p {
+  margin: 0;
+}
+
+footer .copyright {
   text-align: center;
-  font-size: 14px;
-  color: #ffffff;
-  border-top: 1px solid #333333;
-  padding-top: 20px;
-  margin-top: 30px;
+  font-size: 0.9em;
+  color: #ccc;
+  margin-top: 10px;
 }
-
-@media (max-width: 768px) {
-  .footer-content {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .footer {
-    padding: 40px 20px 20px 20px;
-  }
+.footer-logo {
+  width: 180px;
+  margin-bottom: 20px;
 }
 
 .social-icons {
@@ -516,378 +536,144 @@
   font-size: 0.9rem;
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    height: auto;
-    padding: 20px;
-  }
 
-  .nav-links {
-    margin-top: 15px;
-    gap: 20px;
-  }
+/* our vision page*/
 
-  .banner {
-    flex-direction: column;
-    height: auto;
-    padding: 40px 20px;
-  }
-
-  .hero-text {
+.ourvisionblack{
+    background-color: #000;
+    color: #ffffff;
+    /* height: 30vh; */
     text-align: center;
-    margin-bottom: 40px;
+    margin:auto;
+    padding: 50px 20px;
   }
 
-  .hero-text h1 {
-    font-size: 32px;
-  }
-
-  .welcome-section h1 {
-    font-size: 2.5rem;
-  }
-
-  .welcome-section p {
-    font-size: 1.1rem;
-    padding: 0 20px;
-  }
-
-  .features-grid {
-    grid-template-columns: 1fr;
-    gap: 50px;
-  }
-
-  .events-section h2 {
-    font-size: 2.2rem;
-  }
-
-  .events-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .cta-section h1 {
-    font-size: 2.5rem;
-  }
-
-  .cta-section p {
-    font-size: 1.1rem;
-  }
-
-  .footer-container {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .brand-section h2 {
-    font-size: 2rem;
-  }
+.main-div{
+    padding: 0 5%;
 }
 
-/* conctact-styles */
-
-/* Container */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
+.ourvision{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-/* Navbar */
-.navbar {
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+.wordvision{
+    width: 40%;
+    text-align: center;
+    height: 40vh;
+    padding: 10%;
 }
 
-.navbar-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.descriptionouvision{
+    width: 60%;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.logo .italic {
-  font-style: italic;
-}
-
-.logo .bold {
-  font-weight: 600;
-}
-
-.nav-links a {
-  margin-left: 1rem;
-  text-decoration: none;
-  color: #1f2937;
-}
-
-.nav-links .active {
-  color: #dc2626;
-  border-bottom: 2px solid #dc2626;
-}
-
-/* Hero */
-.hero {
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  padding: 4rem 1rem;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-/* Contact Section */
-.contact-section {
-  padding: 4rem 1rem;
-}
-
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-}
-
-@media (min-width: 768px) {
-  .contact-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-/* Form */
-.form-card {
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
-
-.form-card h2 {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-}
-
-.form-card p {
-  font-size: 0.9rem;
-  margin-bottom: 1.5rem;
-}
-
-form .row {
-  display: flex;
-  gap: 1rem;
-}
-
-form .field {
-  flex: 1;
-  margin-bottom: 1rem;
-}
-
-form label {
-  display: block;
-  font-size: 0.9rem;
-  margin-bottom: 0.3rem;
-}
-
-form input,
-form textarea {
-  width: 100%;
-  padding: 0.6rem;
-  border: 1px solid #d1d5db;
-  border-radius: 0.3rem;
-}
-
-form button {
-  background-color: #000;
-  color: #fff;
-  padding: 0.6rem 1.5rem;
-  border: none;
-  border-radius: 0.3rem;
-  cursor: pointer;
-}
-
-form button:hover {
-  background-color: #333;
-}
-
-/* Info */
-.info-card {
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
-
-.info-card h3 {
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-}
-
-.info {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.icon {
-  font-size: 1.5rem;
-  color: #dc2626;
-}
-
-.social .icons {
-  display: flex;
-  gap: 1rem;
-  font-size: 1.5rem;
-  margin-top: 0.5rem;
-}
-
-.map iframe {
-  width: 100%;
-  height: 200px;
-  border: none;
-  border-radius: 0.4rem;
-  margin-top: 0.5rem;
-}
-
-/* our vision */
-
-.ourvisionblack {
-  background-color: #000;
-  color: #ffffff;
-  height: 30vh;
-  text-align: center;
-  margin: auto;
-  padding: 5% 0;
-}
-
-.main-div {
-  padding: 0 5%;
-}
-
-.ourvision {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-.wordvision {
-  width: 40%;
-  text-align: center;
-  height: 40vh;
-  padding: 10%;
-}
-
-.descriptionouvision {
-  width: 60%;
-}
-
-.banner2 {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  height: 75vh;
-  /* border: 1px solid; */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+.banner2{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    /* border: 2px solid; */
+    overflow: hidden !important;
 }
 
 .kidschurchimage {
-  width: 50%;
-  margin: 0 auto;
+    width: 50%;
+    /* margin: 0 auto; */
+     flex-direction: column;
+    justify-content: center;
+    overflow: hidden !important;
 }
 
-.kidschurch {
-  width: 50%;
-  padding: 10%;
+.kidschurch,
+.youth,
+.youthimage {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    /* border: 2px solid pink; */
 }
 
-.kidschurch h1 {
-  margin-bottom: 6%;
+.kidschurch h1,
+.youth h1 {
+    margin-bottom: 6%;
 }
 
-.banner3 {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  height: 75vh;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+.banner3  {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    box-shadow: 0 4px 6px #0000000d;
+    /* border: 2px solid;/ */
 }
 
 .youthimage {
-  width: 50%;
-  margin: 0 auto;
-}
-
-.youth {
-  width: 50%;
-  padding: 10%;
-}
-
-.youth h1 {
-  margin-bottom: 6%;
+    /* margin: 0 auto; */
+    width: 55%;
+    height: 100%;
+    /* border: 2px solid pink; */
+    overflow: hidden;
 }
 
 .kidschurchimage img,
 .youthimage img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    /* border: 2px solid pink; */
 }
 
-.youthimage img {
-  width: 100%;
-  height: 75vh;
-  object-fit: cover;
-}
 
-.webelive {
-  width: 100%;
-  text-align: center;
-  height: 25vh;
-  /* border: 1px solid; */
-  padding: 5% 0;
+.webelive{
+    width: 100%;
+    text-align: center;
+    height: 25vh;
+    /* border: 1px solid; */
+    padding: 5% 0;
 }
-.banner4 {
-  padding: 2%;
+.banner4{
+   padding: 2%;
 }
-.yourlife,
-.people {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  height: 20vh;
+.yourlife , .people {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
 }
 
 .Scripture,
 .Salvation,
 .Community,
 .Mission {
-  width: 50%;
-  padding: 2%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    width: 50%;
+    padding: 2%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .Scripture h2,
 .Salvation h2,
 .Community h2,
-.Mission h2 {
-  margin-bottom: 2%;
+.Mission h2{
+    margin-bottom: 2%;
 }
 
-.Scripture,
-.Community {
-  margin-right: 2%;
+.Scripture , .Community{
+    margin-right: 2%;
 }
 
-.Salvation span,
-.Mission span {
-  color: #ffff;
+.Salvation span , .Mission span{
+    color: transparent;
 }
 
 .leadership-section {
@@ -928,7 +714,7 @@ form button:hover {
   font-size: 1.2rem;
 }
 
-/* watch live */
+/* watch live page */
 
 .container {
   background: white;
@@ -962,6 +748,8 @@ form button:hover {
   margin-bottom: 20px;
 }
 
+
+
 .overlay {
   background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
@@ -993,6 +781,14 @@ form button:hover {
   display: flex;
   justify-content: center;
   gap: 20px;
+}
+
+.events-grid{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    justify-content:center ;
+      padding: 10px 20px;
 }
 
 .btn {
@@ -1083,20 +879,6 @@ form button:hover {
   opacity: 0.8; /* Optional hover effect */
 }
 
-/* Contact  */
-.social-icons a {
-  display: inline-block;
-  margin: 10px;
-  text-decoration: none;
-  color: white;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-  font-size: 24px;
-}
-
 .facebook {
   background-color: #1877f2;
 }
@@ -1113,7 +895,7 @@ form button:hover {
 .give-section-div{
   width: 100%;
   height: 270px;
-  border: 1px solid #000;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   background-color: #000;
 }
 .give-section-div h1{
@@ -1158,12 +940,12 @@ form button:hover {
 
 .card {
   flex: 1 1 300px;
-  border: 1px solid #ddd;
   border-radius: 8px;
   padding: 2rem 1rem;
   text-align: center;
   max-width: 400px;
   box-sizing: border-box;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .icon {
@@ -1202,4 +984,606 @@ form button:hover {
   background-color: red;
   border-radius: 50%;
   margin-right: 0.5rem;
+}
+
+.mainGive{
+  background-color: #eee;
+  padding: 2%;
+}
+
+.body {
+  font-family: Arial, sans-serif;
+  margin: 40px 200px;
+  background: #fff;
+  color: #222;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.give-section {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.qr-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.green-text {
+  color: #2a9d8f;
+}
+
+.qr-image {
+  width: 250px;
+  margin: 10px 0;
+}
+
+.powered-by {
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.payment-logos {
+  max-width: 30%;
+  height: auto;
+}
+
+.main_give_div{
+  margin: auto;
+}
+
+.eft-section{
+  width: 50%;
+}
+
+.eft-section, .debit-order-section {
+  text-align: left;
+  margin-top: 40px;
+}
+
+.eft-section h3,
+.debit-order-section h3 {
+  font-style: italic;
+  color: #333;
+}
+
+.eft-section p,
+.debit-order-section p {
+  line-height: 1.6;
+}
+
+.why-we-give {
+  text-align: center;
+  margin: 60px auto;
+  max-width: 700px;
+  padding: 0 20px;
+}
+
+.why-we-give h2 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.why-we-give .scripture {
+  color: red;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.why-we-give .reference {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.why-we-give .explanation {
+  color: #444;
+  line-height: 1.6;
+  font-size: 1em;
+}
+
+.containers {
+  max-width: 600px;
+  background-color: #fff;
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #007a3d;
+  margin-bottom: 30px;
+}
+
+h1 span {
+  color: #2e2e2e;
+  font-weight: bold;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  color: #007a3d;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.section ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+.section ol li {
+  background-color: #007a3d;
+  color: white;
+  padding: 12px 15px;
+  border-radius: 5px;
+  margin-bottom: 3px;
+}
+
+.contact-section {
+  display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    flex-grow: 1;
+}
+
+.contact-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.contact-form-wrapper, .contact-info-wrapper {
+    width: 50%;
+    padding: 20px;
+}
+
+.contact-form-title {
+  color: #000;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-form-subtitle {
+    color: #666;
+    margin-bottom: 20px;
+  }
+
+.contact-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-name-row {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-first-name, .contact-last-name {
+    width: 50%;
+}
+
+.contact-submit-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .contact-submit-btn:hover {
+    background-color: #333;
+  }
+  
+  .contact-info-title {
+    color: #000 !important;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-address p, .contact-email-info p{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #000; /* Avoid using !important unless necessary */
+    font-size: 16px;
+  }
+  
+  .map iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 0.4rem;
+    margin-top: 0.5rem;
+  }
+
+.contact-icon {
+    margin-right: 10px;
+    color: #000;
+}
+
+.contact-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-social-icons {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.contact-social-icons a {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.contact-social-icons .facebook {
+  background-color: #3b5998;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.contact-social-icons .instagram {
+  background-color: #e1306c;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.contact-social-icons .youtube {
+  background-color: #ff0000;
+  padding: 10px;
+  border-radius: 50%;
+}
+.contact-map-section {
+    margin-top: 20px;
+}
+
+.contact-map-frame {
+  width: 100%;
+  height: 200px;
+  border: 0;
+}
+
+.contactblack {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 3% 0;
+    position: relative;
+    font-weight: bold;
+    height: 30vh;
+    margin: 0;
+}
+
+.contactblack-h1 {
+    font-size: 36px;
+    /* margin: 20px 0 10px; */
+}
+
+.contactblack-h3 {
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.foothr{
+   width: 80%;         /* Adjust the width to control size */
+  margin: 20px auto; 
+}
+
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 26px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+
+  .hero-image img {
+    height: 200px;
+  }
+
+  .banner2 {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 !important;
+  }
+
+    .banner3 {
+    flex-direction: column ;
+    text-align: center;
+    padding: 0 !important;
+  }
+
+  .vision-section img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .vision-section .text-content {
+    padding: 0;
+    text-align: left;
+  }
+
+  .showonmobile {
+    display: block !important;
+  }
+
+  .dontshowonmobile {
+    display: inline-block !important;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .nav-links {
+    display: none !important;
+  }
+
+  .nav-links.active {
+    display: flex !important; /* Show when toggled */
+  }
+}
+
+.banner2, .banner3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0px;
+}
+
+.kidschurchimage img, .youthimage img {
+  width: 100%;
+  max-width: 100vw;
+  height: auto;
+  object-fit: cover;
+}
+
+.kidschurch, .youth {
+  max-width: 100%;
+  min-height: 40vh;
+  padding: 0;
+  /* border: 2px solid; */
+  
+}
+
+/* Responsive Styles */
+@media (max-width: 750px) {
+
+  .banner {
+    flex-direction: column;
+    height: auto;
+    /* padding: 40px 20px; */
+  }
+
+
+  .showonmobile {
+    display: block !important;
+  }
+
+  .dontshowonmobile {
+    display: none;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .hero-image img {
+    height: 250px;
+  }
+ .banner2,
+    .banner3 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .kidschurchimage,
+    .kidschurch,
+    .youth,
+    .youthimage {
+        width: 100%;
+    }
+
+     .kidschurch,
+    .youth{
+      height: 5vh;
+    }
+
+    .kidschurchimage img,
+    .youthimage img {
+        height: auto;
+        max-height: 300px;
+    }
+
+    .body {
+    margin: 20px;
+    box-shadow: none;
+  }
+
+  .eft-section {
+    width: 100%;
+  }
+
+  .payment-logos {
+    max-width: 60%;
+  }
+
+  .qr-image {
+    width: 100%;
+    max-width: 250px;
+  }
+
+    .footer-column,
+  .footer-column1 {
+    width: 100%;
+    text-align: left;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+    .events-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .event-card {
+    padding: 20px;
+  }
+
+  .ourvision {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wordvision,
+  .descriptionouvision {
+    width: 100%;
+    padding: 5%;
+    height: auto;
+    text-align: center;
+  }
+
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #333;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+ .nav-links {
+    display: none !important;
+  }
+
+  .nav-links.active {
+    display: flex !important; /* Show when toggled */
+  }
+.showonmobile{
+    display: block !important;
+  }
+
+  .dontshowonmobile {
+    display: block !important;
+  }
+
+  .logo{
+    padding: 1%;
+  }
+
+   .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-form-wrapper, 
+  .contact-info-wrapper {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .contact-name-row {
+    flex-direction: column;
+  }
+
+  .contact-first-name,
+  .contact-last-name {
+    width: 100%;
+  }
+
+  .contactblack-h1 {
+    font-size: 28px;
+  }
+
+  .contactblack-h3 {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .map iframe,
+  .contact-map-frame {
+    height: 150px;
+  }
+
+  .contact-social-icons {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .contact-social-icons a {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+
+  .contactblack {
+    height: auto;
+    padding: 5% 0;
+  }
+
+  .foothr {
+    width: 90%;
+    margin: 10px auto;
+  }
 }
