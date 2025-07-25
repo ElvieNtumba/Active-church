@@ -1306,6 +1306,40 @@ h1 span {
 
 
 @media (max-width: 480px) {
+  .yourlife,
+  .people {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 10px;
+    height: 30vh;
+  }
+
+  .Scripture,
+  .Salvation,
+  .Community,
+  .Mission {
+    width: 100%;
+    margin-right: 0; /* remove side spacing on small screens */
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin: 2% 0;
+  }
+
+  .Scripture h2,
+  .Salvation h2,
+  .Community h2,
+  .Mission h2 {
+    font-size: 18px;
+  }
+
+  .Scripture p,
+  .Salvation p,
+  .Community p,
+  .Mission p {
+    font-size: 14px;
+  }
   .hero-text h1 {
     font-size: 26px;
   }
