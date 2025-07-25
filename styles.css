@@ -1372,6 +1372,24 @@ h1 span {
   .nav-links.active {
     display: flex !important; /* Show when toggled */
   }
+   .hero-buttons {
+    display: flex;
+    flex-direction: row;      /* keep them side by side */
+    justify-content: center;  /* center the buttons */
+    flex-wrap: wrap;          /* allow wrap if space runs out */
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .hero-buttons .btn {
+    font-size: 14px;
+    padding: 10px 16px;
+    white-space: nowrap;      /* prevent text from wrapping */
+  }
+
+  .hero-buttons .icon {
+    margin-right: 6px;
+  }
 }
 
 .banner2, .banner3 {
