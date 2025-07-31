@@ -117,9 +117,9 @@ body{
 
 
 .hero-text span{
-  font-family: "Gwendolyn", cursive;
+  /* font-family: "Gwendolyn", cursive;
   font-weight: 400;
-  font-style: normal;
+  font-style: normal; */
   font-weight: bold;
   color: #fff;
 }
