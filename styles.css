@@ -100,6 +100,10 @@ body{
   align-items: center;
   padding: 60px 40px;
   background-color: black;
+  background-image: linear-gradient(rgba(8, 8, 8, 0.747), rgba(10, 10, 10, 0.705)), url('images/SnapInsta.to_504163605_18326229490205809_4089181433337316770_n.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-text {
@@ -157,9 +161,10 @@ body{
   color: black;
 }
 
-.hero-buttons .icon{
+.hero-buttons .iconjoin{
   background-color: white;
   color: black !important;
+  font-size: 12px;
 }
 
 .btn.primary:hover {
@@ -196,30 +201,35 @@ body{
 
 /* SEction below the banner--- wellcome section */
 
-  .welcome-section {
-            padding: 80px 40px;
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center;
-        }
+.welcome-section {
+  padding: 80px 40px;
+  max-width: 100%;
+  /* margin: 0 auto; */
+  text-align: center;
+  background-image:linear-gradient(rgba(232, 225, 235, 0.623), rgba(240, 239, 240, 0.534)),  url('images/SnapInsta.to_504432917_18326229325205809_6855473445620958790_n.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-        .welcome-title {
-            font-size: 48px;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 30px;
-        }
+  }
 
-        .welcome-subtitle {
-            font-size: 18px;
-            color: #666;
-            margin-bottom: 60px;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
+.welcome-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 30px;
+}
 
-        .pillars-container {
+.welcome-subtitle {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 60px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pillars-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 60px;
@@ -230,6 +240,7 @@ body{
 
 .pillar {
   text-align: center;
+  color: #000;
 }
 
 .pillar-icon {
@@ -271,85 +282,92 @@ body{
 .pillar-title {
   font-size: 24px;
   font-weight: bold;
-  color: #333;
+  color: #000;
   margin-bottom: 15px;
 }
 
 .pillar-description {
   font-size: 16px;
-  color: #666;
+  color: #000;
   line-height: 1.5;
   max-width: 280px;
   margin: 0 auto;
 }
 
-        .upcoming-events {
-            text-align: center;
-        }
+.upcoming-events {
+    text-align: center;
+    background-color: #ffffff96;
+    padding: 3% 0;
+}
 
-        .events-title {
-            font-size: 48px;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 20px;
-        }
+.events-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
 
-        .events-subtitle {
-            font-size: 18px;
-            color: #666;
-            margin-bottom: 50px;
-        }
-        
-        .events-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 60px;
-            max-width: 900px;
-            margin: 20px auto;
-        }
-        
-        .event-card {
-            text-align: left;
-            padding: 30px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        .event-title {
-            font-size: 24px;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 10px;
-        }
-        
-        .event-description {
-            font-size: 16px;
-            color: #000;
-            margin-bottom: 25px;
-        }
-        
-        .event-details {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        
-        .event-detail {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .icon {
-            font-size: 16px;
-            color: #666;
-        }
-        
-        .detail-text {
-            font-size: 14px;
-            color: #000;
-        }
+.events-subtitle {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.event-card {
+    text-align: left;
+    padding: 30px;
+    background-color: #ffffff62;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.event-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.event-description {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+.event-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.event-detail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    font-size: 16px;
+    color: #666;
+}
+
+.iconpillar{
+  font-size: 20px;
+  color: #000;
+}
+
+.detail-text {
+    font-size: 14px;
+    color: #000;
+}
 
 .cta-section {
   background: linear-gradient(135deg, #333 0%, #555 100%);
@@ -553,10 +571,49 @@ footer .copyright {
 .ourvisionblack{
     background-color: #000;
     color: #ffffff;
-    /* height: 30vh; */
     text-align: center;
     margin:auto;
+    height: 40vh;
     padding: 50px 20px;
+    background-color: black;
+    background-image: 
+      linear-gradient(rgba(8, 8, 8, 0.027), rgba(10, 10, 10, 0.356)), 
+      url('./images/SnapInsta.to_503671807_18325249375205809_7112355811609069840_n.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+.ourvisionblack2{
+    background-color: #000;
+    color: #ffffff;
+    text-align: center;
+    height: 40vh;
+    margin:auto;
+    padding: 50px 20px;
+    background-color: black;
+    background-image: 
+      linear-gradient(rgba(8, 8, 8, 0.027), rgba(10, 10, 10, 0.356)), 
+      url('images/SnapInsta.to_504361137_18326229442205809_1207328382216318209_n.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+.ourvisionblack3{
+    background-color: #000;
+    color: #ffffff;
+    text-align: center;
+    height: 40vh;
+    margin:auto;
+    padding: 50px 20px;
+    background-color: black;
+    background-image: 
+      linear-gradient(rgba(8, 8, 8, 0.027), rgba(10, 10, 10, 0.356)), 
+      url('images/SnapInsta.to_503623098_18325249387205809_8496022288480080064_n.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
 .main-div{
@@ -654,22 +711,41 @@ footer .copyright {
 }
 .banner4{
    padding: 2%;
+  }
+  
+.imagesss{
+  background-color: #fff;
+  background-image: 
+  linear-gradient(rgba(255, 255, 255, 0.781), rgba(255, 255, 255, 0.719)
+), 
+  url('images/34.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  backdrop-filter: blur(3px);
 }
+
 .yourlife , .people {
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
     height: 20vh;
+    margin-top: 2% ;
+    margin-bottom: 3%;
 }
 
 .Scripture,
 .Salvation,
 .Community,
 .Mission {
-    width: 50%;
-    padding: 2%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  width: 50%;
+  padding: 2%;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  
 }
 
 .Scripture h2,
@@ -687,9 +763,9 @@ footer .copyright {
     color: transparent;
 }
 
-.leadership-section {
-  padding: 60px 20px;
-}
+/* .leadership-section {
+  /* padding: 60px 20px; */
+/* }  */
 
 .leadership-section h1 {
   font-size: 2.5rem;
@@ -705,24 +781,30 @@ footer .copyright {
   text-align: center;
 }
 
-.card {
-  max-width: 600px;
+.card1 {
+  max-width: 70%;
+  height: 100vh;
   margin: 0 auto;
   padding: 16px;
   border: 1px solid #eee;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   background-color: #fff;
+  margin: 0 auto;
 }
 
 .pastors-image {
   width: 100%;
   border-radius: 12px;
+  display: block; /* makes margin auto work horizontally */
+  margin: 0 auto;
 }
 
 .pastors-name {
   margin-top: 20px;
-  font-size: 1.2rem;
+  margin-right: 10%;
+  font-size: 2.2rem;
+  text-align: right;
 }
 
 /* watch live page */
@@ -740,6 +822,17 @@ footer .copyright {
 .title {
   color: #0044cc;
   font-weight: 600;
+}
+
+.watchimage{
+    background-image: 
+  url('images/Section.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  backdrop-filter: blur(3px);
+  height: 140vh;
 }
 
 .subtitle {
@@ -822,10 +915,10 @@ footer .copyright {
 }
 
 .watch-section {
-  background-color: #1c1c1c;
+  /* background-color: #1c1c1c; */
   color: #fff;
   text-align: center;
-  padding: 60px 20px;
+  padding: 30px 20px;
 }
 
 .watch-section h2 {
@@ -836,7 +929,7 @@ footer .copyright {
 
 .watch-section p {
   font-size: 16px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   color: #ccc;
 }
 
@@ -1006,8 +1099,12 @@ footer .copyright {
   font-family: Arial, sans-serif;
   margin: 40px 200px;
   background: #fff;
-  color: #222;
+  color: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(rgba(7, 7, 7, 0.747), rgba(0, 0, 0, 0.705)), url('images/Frame 93.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .give-section {
@@ -1059,7 +1156,7 @@ footer .copyright {
 .eft-section h3,
 .debit-order-section h3 {
   font-style: italic;
-  color: #333;
+  color: #fff;
 }
 
 .eft-section p,
@@ -1069,15 +1166,25 @@ footer .copyright {
 
 .why-we-give {
   text-align: center;
-  margin: 60px auto;
+  margin: 0px auto;
   max-width: 700px;
-  padding: 0 20px;
+  padding: 5% 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.mainimg{
+  background-image: linear-gradient(rgba(7, 7, 7, 0.747), rgba(0, 0, 0, 0.705)), url('images/SnapInsta.to_504484732_18326229409205809_958354511391319144_n.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
 }
 
 .why-we-give h2 {
   font-size: 2em;
   font-weight: 700;
   margin-bottom: 20px;
+  color: #fff;
 }
 
 .why-we-give .scripture {
@@ -1089,12 +1196,12 @@ footer .copyright {
 
 .why-we-give .reference {
   font-style: italic;
-  color: #555;
+  color: #fff;
   margin-bottom: 20px;
 }
 
 .why-we-give .explanation {
-  color: #444;
+  color: #fff;
   line-height: 1.6;
   font-size: 1em;
 }
@@ -1294,8 +1401,15 @@ h1 span {
     padding: 3% 0;
     position: relative;
     font-weight: bold;
-    height: 30vh;
     margin: 0;
+    height: 40vh;
+    background-color: black;
+    background-image: 
+      linear-gradient(rgba(8, 8, 8, 0.027), rgba(10, 10, 10, 0.356)), 
+      url('images/SnapInsta.to_504806520_18326229370205809_8636710689607754357_n.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .contactblack-h1 {
@@ -1546,10 +1660,6 @@ h1 span {
     grid-template-columns: 1fr;
     gap: 30px;
     padding: 0 20px;
-  }
-
-  .event-card {
-    padding: 20px;
   }
 
   .ourvision {
