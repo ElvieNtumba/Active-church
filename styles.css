@@ -629,14 +629,14 @@ footer .copyright {
 }
 
 .wordvision{
-    width: 40%;
+    width: 50%;
     text-align: center;
     height: 40vh;
     padding: 10%;
 }
 
 .descriptionouvision{
-    width: 60%;
+    width: 50%;
 }
 
 .banner2{
@@ -687,7 +687,7 @@ footer .copyright {
 
 .youthimage {
     /* margin: 0 auto; */
-    width: 55%;
+    width: 50%;
     height: 100%;
     /* border: 2px solid pink; */
     overflow: hidden;
@@ -769,7 +769,7 @@ footer .copyright {
 
 .leadership-section h1 {
   font-size: 2.5rem;
-  margin-bottom: 10px;
+  margin: 55px 0 0 0 ;
   font-weight: 700;
   text-align: center;
 }
@@ -788,7 +788,7 @@ footer .copyright {
   padding: 16px;
   border: 1px solid #eee;
   border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
   background-color: #fff;
   margin: 0 auto;
 }
@@ -996,6 +996,78 @@ footer .copyright {
 }
 
 /* GIVETODAY STYLES SECTION */
+
+.give-section {
+    display: flex;
+    /* background-color: #2a2a2a; */
+    padding: 30px;
+    border-radius: 15px;
+    gap: 40px;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    flex-wrap: wrap;
+  }
+
+  .qr-section {
+    flex: 1 1 250px;
+    text-align: center;
+    width: 50%;
+  }
+
+  .qr-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  .green-text {
+    color: #4caf50;
+  }
+
+  .qr-section img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 15px;
+  }
+
+  .powered-by {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #ccc;
+  }
+
+  .payment-logos {
+    width: 150px;
+    height: auto;
+  }
+
+  .main_give_div {
+    flex: 2 1 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+  }
+
+  .eft-section, .debit-order-section {
+    /* background-color: #3a3a3a; */
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .eft-section h3, .debit-order-section h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+  }
+
+  .eft-section p, .debit-order-section p {
+    margin: 5px 0;
+    color: #ccc;
+    font-size: 14px;
+  }
+
 .give-section-div{
   width: 100%;
   height: 270px;
@@ -1107,7 +1179,7 @@ footer .copyright {
   background-repeat: no-repeat;
 }
 
-.give-section {
+/* .give-section {
   max-width: 800px;
   margin: auto;
   padding: 20px;
@@ -1162,7 +1234,7 @@ footer .copyright {
 .eft-section p,
 .debit-order-section p {
   line-height: 1.6;
-}
+} */
 
 .why-we-give {
   text-align: center;
@@ -1188,7 +1260,7 @@ footer .copyright {
 }
 
 .why-we-give .scripture {
-  color: red;
+  color: white;
   font-weight: bold;
   font-size: 1.2em;
   margin-bottom: 10px;
