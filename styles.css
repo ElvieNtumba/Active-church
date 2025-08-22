@@ -439,6 +439,16 @@ body{
   margin: 20px 0;
   width: 25%;
 }
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline; /* Optional: adds underline on hover */
+  color: #dddddd; /* Optional: slightly lighter white on hover */
+}
+
 
 .footer-column1 {
   width: 50%;
@@ -709,6 +719,9 @@ footer .copyright {
     /* border: 1px solid; */
     padding: 5% 0;
 }
+.webelive{
+padding-top: '20px';
+}
 .banner4{
    padding: 2%;
   }
@@ -722,7 +735,7 @@ footer .copyright {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 90vh;
+  height: 80vh;
   backdrop-filter: blur(3px);
 }
 
@@ -783,7 +796,7 @@ footer .copyright {
 
 .card1 {
   max-width: 70%;
-  height: 100vh;
+  height: 83vh;
   margin: 0 auto;
   padding: 16px;
   border: 1px solid #eee;
