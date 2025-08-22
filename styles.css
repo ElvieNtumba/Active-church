@@ -70,6 +70,27 @@ body{
   object-fit: contain;
 }
 
+/* Tablets */
+@media (max-width: 1024px) {
+  .logo img {
+    height: 45px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .logo img {
+    height: 40px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .logo img {
+    height: 35px;
+  }
+}
+
 .logo{
   display: flex;
 }
@@ -317,9 +338,46 @@ body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
-    max-width: 900px;
+    max-width: 400px;
     margin: 20px auto;
 }
+
+.events-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  max-width: 1200px; /* wider so 2 columns fit */
+  margin: 20px auto;
+  padding: 0 20px; /* some breathing room */
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .events-container {
+    grid-template-columns: 1fr 1fr; /* still 2 columns */
+    gap: 40px;
+    max-width: 600px;
+  }
+}
+
+/* Mobile landscape */
+@media (max-width: 768px) {
+  .events-container {
+    grid-template-columns: 1fr; /* stack in 1 column */
+    gap: 30px;
+    max-width: 400px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .events-container {
+    grid-template-columns: 1fr; /* single column */
+    gap: 20px;
+    max-width: 100%;
+  }
+}
+
 
 .event-card {
     text-align: left;
@@ -573,8 +631,8 @@ footer .copyright {
     color: #ffffff;
     text-align: center;
     margin:auto;
-    height: 40vh;
-    padding: 50px 20px;
+    height: 30vh;
+    padding: 60px;
     background-color: black;
     background-image: 
       linear-gradient(rgba(8, 8, 8, 0.027), rgba(10, 10, 10, 0.356)), 
@@ -588,9 +646,9 @@ footer .copyright {
     background-color: #000;
     color: #ffffff;
     text-align: center;
-    height: 40vh;
+    height: 30vh;
     margin:auto;
-    padding: 50px 20px;
+    padding: 60px;
     background-color: black;
     background-image: 
       linear-gradient(rgba(8, 8, 8, 0.027), rgba(10, 10, 10, 0.356)), 
@@ -604,9 +662,9 @@ footer .copyright {
     background-color: #000;
     color: #ffffff;
     text-align: center;
-    height: 40vh;
+    height: 30vh;
     margin:auto;
-    padding: 50px 20px;
+    padding: 60px;
     background-color: black;
     background-image: 
       linear-gradient(rgba(8, 8, 8, 0.027), rgba(10, 10, 10, 0.356)), 
@@ -615,6 +673,44 @@ footer .copyright {
     background-position: center;
     background-repeat: no-repeat;
   }
+
+  /* Large screens (default styles you already have) */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .ourvisionblack,
+  .ourvisionblack2,
+  .ourvisionblack3 {
+    height: 25vh;   /* a bit taller */
+    padding: 40px;  /* reduce padding */
+    background-position: center;
+  }
+}
+
+/* Mobile landscape */
+@media (max-width: 768px) {
+  .ourvisionblack,
+  .ourvisionblack2,
+  .ourvisionblack3 {
+    height: 25vh;
+    padding: 30px;
+    font-size: 0.95rem; /* shrink text slightly */
+    background-size: cover;
+  }
+}
+
+/* Mobile portrait (very small screens) */
+@media (max-width: 480px) {
+  .ourvisionblack,
+  .ourvisionblack2,
+  .ourvisionblack3 {
+    height: auto;         /* let content decide height */
+    padding: 20px 15px;   /* tighter spacing */
+    font-size: 0.85rem;   /* smaller text */
+    background-position: top;
+  }
+}
+
 
 .main-div{
     padding: 0 5%;
@@ -834,6 +930,31 @@ footer .copyright {
   backdrop-filter: blur(3px);
   height: 140vh;
 }
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .watchimage {
+    height: 90vh;
+  }
+}
+
+/* Mobile landscape */
+@media (max-width: 768px) {
+  .watchimage {
+    height: 230vh;
+    background-position: top;
+  }
+}
+
+/* Small mobile portrait */
+@media (max-width: 480px) {
+  .watchimage {
+    height: auto; /* let content decide */
+    min-height: 80vh; /* ensures section is still visible */
+    background-position: top;
+  }
+}
+
 
 .subtitle {
   font-size: 14px;
@@ -1169,7 +1290,7 @@ footer .copyright {
 
 .body {
   font-family: Arial, sans-serif;
-  margin: 40px 200px;
+  margin: 40px auto;
   background: #fff;
   color: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -1177,6 +1298,7 @@ footer .copyright {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  max-width: 800px;
 }
 
 /* .give-section {
@@ -1249,7 +1371,7 @@ footer .copyright {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 70vh;
+  height: 50vh;
 }
 
 .why-we-give h2 {
@@ -1474,7 +1596,7 @@ h1 span {
     position: relative;
     font-weight: bold;
     margin: 0;
-    height: 40vh;
+    height: 30vh;
     background-color: black;
     background-image: 
       linear-gradient(rgba(8, 8, 8, 0.027), rgba(10, 10, 10, 0.356)), 
@@ -1728,11 +1850,11 @@ h1 span {
     align-items: flex-start;
   }
 
-    .events-container {
+    /* .events-container {
     grid-template-columns: 1fr;
     gap: 30px;
     padding: 0 20px;
-  }
+  } */
 
   .ourvision {
     flex-direction: column;
