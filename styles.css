@@ -811,18 +811,23 @@ footer .copyright {
 .webelive{
     width: 100%;
     text-align: center;
-    height: 25vh;
+    height: 15vh;
+    border: 1px solid #000;
+  
     /* border: 1px solid; */
-    padding: 5% 0;
+    /* padding: 5% 0; */
 }
 .webelive{
 padding-top: '20px';
 }
+
+
 .banner4{
    padding: 2%;
   }
   
 .imagesss{
+  border: 1px solid #000;
   background-color: #fff;
   background-image: 
   linear-gradient(rgba(255, 255, 255, 0.781), rgba(255, 255, 255, 0.719)
@@ -831,7 +836,7 @@ padding-top: '20px';
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 80vh;
+  height: 78vh;
   backdrop-filter: blur(3px);
 }
 
@@ -891,30 +896,68 @@ padding-top: '20px';
 }
 
 .card1 {
-  max-width: 70%;
-  height: 83vh;
-  margin: 0 auto;
+  width: 80%;
+  margin: 20px auto;
   padding: 16px;
   border: 1px solid #eee;
   border-radius: 12px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
   background-color: #fff;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  height: auto; /* Let height grow naturally */
 }
 
+/* Image wrapper */
 .pastors-image {
   width: 100%;
   border-radius: 12px;
-  display: block; /* makes margin auto work horizontally */
-  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
+/* Image scales fully with the card */
+.card1 img {
+  width: 80%;
+  height: auto;
+  /* border: 1px solid #000; */
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Text styles */
 .pastors-name {
   margin-top: 20px;
-  margin-right: 10%;
-  font-size: 2.2rem;
-  text-align: right;
+  font-size: 2rem;
+  text-align: center;
+  word-wrap: break-word;
 }
+
+/* === Responsive Breakpoints === */
+@media screen and (max-width: 768px) {
+  .card1 {
+    padding: 14px;
+  }
+
+  .pastors-name {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card1 {
+    padding: 12px;
+  }
+
+  .pastors-name {
+    font-size: 1.4rem;
+  }
+}
+
+
 
 /* watch live page */
 
