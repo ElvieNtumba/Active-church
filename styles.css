@@ -806,24 +806,19 @@ footer .copyright {
 
 .kidschurchimage img,
 .youthimage img {
-    width: 100%;
-    height: 30vh;
-    object-fit: cover;
-    /* border: 2px solid pink; */
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
 }
 
 
 .webelive{
-    width: 100%;
-    text-align: center;
-    height: 15vh;
-    /* border: 1px solid #000; */
-  
-    /* border: 1px solid; */
-    /* padding: 5% 0; */
+  width: 100%;
+  text-align: center;
+  height: 15vh;
 }
 .webelive{
-padding-top: '20px';
+padding-top: 10px;
 }
 
 
@@ -832,7 +827,7 @@ padding-top: '20px';
   }
   
 .imagesss{
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   background-color: #fff;
   background-image: 
   linear-gradient(rgba(255, 255, 255, 0.781), rgba(255, 255, 255, 0.719)
@@ -841,8 +836,39 @@ padding-top: '20px';
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 78vh;
+  height: 70vh;
   backdrop-filter: blur(3px);
+}
+
+/* Large screens */
+@media (max-width: 1200px) {
+  .imagesss {
+    height: 70vh;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+  .imagesss {
+    height: 70vh;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 768px) {
+  .imagesss {
+    height: 70vh;
+    background-size: contain; /* optional to prevent cropping */
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .imagesss {
+    height: 85vh;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+  }
 }
 
 .yourlife , .people {
@@ -851,7 +877,7 @@ padding-top: '20px';
     justify-content: center;
     align-items: center;
     height: 20vh;
-    margin-top: 2% ;
+    margin-top: 1% ;
     margin-bottom: 3%;
 }
 
@@ -882,9 +908,6 @@ padding-top: '20px';
     color: transparent;
 }
 
-/* .leadership-section {
-  /* padding: 60px 20px; */
-/* }  */
 
 .leadership-section h1 {
   font-size: 2.5rem;
@@ -1432,7 +1455,37 @@ padding-top: '20px';
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 50vh;
+  height: 60vh;
+}
+
+/* Large screens */
+@media (max-width: 1263px) {
+  .mainimg {
+    height: 35vh;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+  .mainimg {
+    height: 35vh;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 768px) {
+  .mainimg {
+    height: 35vh;
+    background-size: contain; /* optional, prevents cropping */
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .mainimg {
+    height: 56vh;
+    background-size: cover;
+  }
 }
 
 .why-we-give h2 {
