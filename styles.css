@@ -817,7 +817,7 @@ footer .copyright {
     width: 100%;
     text-align: center;
     height: 15vh;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
   
     /* border: 1px solid; */
     /* padding: 5% 0; */
