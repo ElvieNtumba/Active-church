@@ -1436,7 +1436,7 @@ padding-top: '20px';
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 35vh;
+  height: 36vh;
 
   display: flex;
   flex-direction: column;
@@ -1666,17 +1666,28 @@ h1 span {
     color: #000;
 }
 
+/* Label styling */
 .contact-label {
-    font-weight: bold;
-    margin-bottom: 5px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
+/* Layout for 'Follow Us' + icons row */
+.contact-social-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap; /* allows wrapping if space is tight */
+}
+
+/* Social icons container */
 .contact-social-icons {
   display: flex;
-  gap: 16px;
-  margin-top: 20px;
+  gap: 12px;
+  margin-top: 0; /* prevent spacing from pushing down */
 }
 
+/* Social icon links */
 .contact-social-icons a {
   color: white;
   display: flex;
@@ -1688,6 +1699,7 @@ h1 span {
   transition: transform 0.3s ease;
 }
 
+/* Individual icon styles */
 .contact-social-icons .facebook {
   background-color: #3b5998;
   padding: 10px;
@@ -1705,6 +1717,26 @@ h1 span {
   padding: 10px;
   border-radius: 50%;
 }
+
+/* Hover effect (optional) */
+.contact-social-icons a:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive behavior for mobile */
+@media (max-width: 600px) {
+  .contact-social-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .contact-social-icons a {
+    width: 48px;
+    height: 48px;
+  }
+}
+
 .contact-map-section {
     margin-top: 20px;
 }
