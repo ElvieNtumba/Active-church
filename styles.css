@@ -227,7 +227,12 @@ body{
   max-width: 100%;
   /* margin: 0 auto; */
   text-align: center;
-  background-image:linear-gradient(rgba(232, 225, 235, 0.623), rgba(240, 239, 240, 0.534)),  url('images/SnapInsta.to_504432917_18326229325205809_6855473445620958790_n.png');
+background-image: linear-gradient(
+    rgba(232, 225, 235, 0.623),
+    rgba(240, 239, 240, 0.534)
+  ),
+  url('./images/active-church.jpg');
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
