@@ -1670,82 +1670,67 @@ h1 span {
 .contact-label {
   font-weight: bold;
   margin-bottom: 5px;
+  padding-left: 5px;
 }
 
-/* Layout for 'Follow Us' + icons row */
-.contact-social-row {
+.contact-social-wrapper {
   display: flex;
-  align-items: center;
-  gap: 16px;
-  flex-wrap: wrap; /* allows wrapping if space is tight */
+  flex-direction: column; /* Heading on top, icons below */
+  align-items: flex-start; /* Align everything to the left with text */
+  gap: 8px; /* Space between heading and icons */
 }
 
-/* Social icons container */
+.contact-social-title {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #000;
+}
+
 .contact-social-icons {
   display: flex;
   gap: 12px;
-  margin-top: 0; /* prevent spacing from pushing down */
+  align-items: center;
 }
 
-/* Social icon links */
 .contact-social-icons a {
-  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
   width: 40px;
   height: 40px;
+  border-radius: 50%;
+  text-decoration: none;
   transition: transform 0.3s ease;
+  padding: 0; /* remove extra padding */
+  color: white;
 }
 
-/* Individual icon styles */
 .contact-social-icons .facebook {
   background-color: #3b5998;
-  padding: 10px;
-  border-radius: 50%;
 }
 
 .contact-social-icons .instagram {
   background-color: #e1306c;
-  padding: 10px;
-  border-radius: 50%;
 }
 
 .contact-social-icons .youtube {
   background-color: #ff0000;
-  padding: 10px;
-  border-radius: 50%;
 }
 
-/* Hover effect (optional) */
 .contact-social-icons a:hover {
   transform: scale(1.1);
 }
 
-/* Responsive behavior for mobile */
+/* Mobile responsiveness */
 @media (max-width: 600px) {
-  .contact-social-row {
-    flex-direction: column;
-    align-items: flex-start;
+  .contact-social-icons {
     gap: 8px;
-  }
-
-  .contact-social-icons a {
-    width: 48px;
-    height: 48px;
+    flex-wrap: wrap;
   }
 }
 
-.contact-map-section {
-    margin-top: 20px;
-}
 
-.contact-map-frame {
-  width: 100%;
-  height: 200px;
-  border: 0;
-}
+
 
 .contactblack {
     background-color: #000;
