@@ -227,12 +227,7 @@ body{
   max-width: 100%;
   /* margin: 0 auto; */
   text-align: center;
-background-image: linear-gradient(
-    rgba(232, 225, 235, 0.623),
-    rgba(240, 239, 240, 0.534)
-  ),
-  url('./images/active-church.jpg');
-
+  background-image:linear-gradient(rgba(232, 225, 235, 0.623), rgba(240, 239, 240, 0.534)),  url('images\20250530_185454_266.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -818,7 +813,7 @@ footer .copyright {
   height: 15vh;
 }
 .webelive{
-padding-top: 10px;
+padding-top: '20px';
 }
 
 
@@ -827,7 +822,7 @@ padding-top: 10px;
   }
   
 .imagesss{
-  /* border: 1px solid #000; */
+  border: 1px solid #000;
   background-color: #fff;
   background-image: 
   linear-gradient(rgba(255, 255, 255, 0.781), rgba(255, 255, 255, 0.719)
@@ -836,39 +831,8 @@ padding-top: 10px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 70vh;
+  height: 78vh;
   backdrop-filter: blur(3px);
-}
-
-/* Large screens */
-@media (max-width: 1200px) {
-  .imagesss {
-    height: 70vh;
-  }
-}
-
-/* Medium screens (tablets) */
-@media (max-width: 992px) {
-  .imagesss {
-    height: 70vh;
-  }
-}
-
-/* Small screens (phones) */
-@media (max-width: 768px) {
-  .imagesss {
-    height: 70vh;
-    background-size: contain; /* optional to prevent cropping */
-  }
-}
-
-/* Extra small screens */
-@media (max-width: 480px) {
-  .imagesss {
-    height: 85vh;
-    background-size: cover;
-    backdrop-filter: blur(2px);
-  }
 }
 
 .yourlife , .people {
@@ -877,7 +841,7 @@ padding-top: 10px;
     justify-content: center;
     align-items: center;
     height: 20vh;
-    margin-top: 1% ;
+    margin-top: 2% ;
     margin-bottom: 3%;
 }
 
@@ -1464,37 +1428,15 @@ padding-top: 10px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 60vh;
-}
+  height: 36vh;
 
-/* Large screens */
-@media (max-width: 1263px) {
-  .mainimg {
-    height: 35vh;
-  }
-}
-
-/* Medium screens (tablets) */
-@media (max-width: 992px) {
-  .mainimg {
-    height: 35vh;
-  }
-}
-
-/* Small screens (phones) */
-@media (max-width: 768px) {
-  .mainimg {
-    height: 35vh;
-    background-size: contain; /* optional, prevents cropping */
-  }
-}
-
-/* Extra small screens */
-@media (max-width: 480px) {
-  .mainimg {
-    height: 56vh;
-    background-size: cover;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* keeps text vertically centered */
+  align-items: center;       /* centers text horizontally */
+  padding: 5%;               /* use relative padding */
+  color: white;
+  text-align: center;        /* center-align text */
 }
 
 .why-we-give h2 {
