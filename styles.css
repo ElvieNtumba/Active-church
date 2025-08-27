@@ -801,21 +801,16 @@ footer .copyright {
 
 .kidschurchimage img,
 .youthimage img {
-    width: 100%;
-    height: 30vh;
-    object-fit: cover;
-    /* border: 2px solid pink; */
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
 }
 
 
 .webelive{
-    width: 100%;
-    text-align: center;
-    height: 15vh;
-    /* border: 1px solid #000; */
-  
-    /* border: 1px solid; */
-    /* padding: 5% 0; */
+  width: 100%;
+  text-align: center;
+  height: 15vh;
 }
 .webelive{
 padding-top: '20px';
@@ -877,9 +872,6 @@ padding-top: '20px';
     color: transparent;
 }
 
-/* .leadership-section {
-  /* padding: 60px 20px; */
-/* }  */
 
 .leadership-section h1 {
   font-size: 2.5rem;
