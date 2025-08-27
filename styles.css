@@ -1231,13 +1231,13 @@ padding-top: '20px';
 .eft-section,
 .debit-order-section {
   /* background-color: #3a3a3a; */
-  padding: 20px;
+  padding: 15px;
   border-radius: 15px;
   text-align: center;   /* ✅ centers all text inside */
 }
 
-.eft-section h3,
-.debit-order-section h3 {
+.eft-section h2,
+.debit-order-section h2 {
   margin: 0 0 10px 0;
   font-size: 20px;
   text-align: center;
