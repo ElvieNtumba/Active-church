@@ -1020,7 +1020,14 @@ padding-top: 10px;
 /* Mobile landscape */
 @media (max-width: 768px) {
   .watchimage {
-    height: 90vh;
+    height: 130vh;
+    background-position: top;
+  }
+}
+
+@media (max-width: 762px) {
+  .watchimage {
+    height: 130vh;
     background-position: top;
   }
 }
