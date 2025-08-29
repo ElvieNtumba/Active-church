@@ -1749,6 +1749,164 @@ h1 span {
     margin: 0 auto 20px;
 }
 
+.contact-item {
+  display: flex;
+  align-items: flex-start;   /* keeps icon top-aligned with text */
+  margin-bottom: 20px;
+}
+
+.contact-item i {
+   font-size: 18px;
+  margin-right: 10px;        /* space between icon and text */
+  min-width: 20px;           /* keeps icons in one column */
+  color: #000;
+  line-height: 1.4;          /* ✅ balances icon height with text */
+  margin-top: 2px;  
+}
+
+.contact-item div {
+  display: flex;
+  flex-direction: column;    /* keeps label & details stacked */
+}
+
+.contact-item p {
+  margin: 2px 0;             /* remove extra gaps */
+  color: #000;
+}
+
+  
+  .map iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 0.4rem;
+    margin-top: 0.5rem;
+  }
+
+.contact-icon {
+    margin-right: 10px;
+    color: #000;
+}
+
+/* Label styling */
+.contact-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  padding-left: 5px;
+  color: #000;
+}
+
+.contact-social-wrapper {
+  display: flex;
+  flex-direction: column; /* Heading on top, icons below */
+  align-items: flex-start; /* Align everything to the left with text */
+  gap: 8px; /* Space between heading and icons */
+}
+
+.contact-social-title {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.contact-social-icons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.contact-social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  padding: 0; /* remove extra padding */
+  color: white;
+}
+
+.contact-social-icons .facebook {
+  background-color: #3b5998;
+}
+
+.contact-social-icons .instagram {
+  background-color: #e1306c;
+}
+
+.contact-social-icons .youtube {
+  background-color: #ff0000;
+}
+
+.contact-social-icons a:hover {
+  transform: scale(1.1);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .contact-social-icons {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background: #fff;
+  color: #000;
+}
+
+.quick-links h3,
+.contact-info h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.quick-links ul {
+  list-style: none;
+}
+
+.quick-links li {
+  margin-bottom: 15px;
+}
+
+.quick-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.quick-links a:hover {
+  color: #fff;
+}
+
+.contact-info p {
+  color: #000;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .foothr{
    width: 80%;         /* Adjust the width to control size */
   margin: 20px auto; 
