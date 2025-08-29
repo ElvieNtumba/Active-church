@@ -1039,6 +1039,14 @@ padding-top: 10px;
   }
 }
 
+@media (max-width: 810px) {
+  .watchimage {
+    height: 82vh;
+    background-position: top;
+  }
+}
+
+
 /* Small mobile portrait */
 @media (max-width: 480px) {
   .watchimage {
