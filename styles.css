@@ -1771,7 +1771,7 @@ h1 span {
 
 .contact-item p {
   margin: 2px 0;             /* remove extra gaps */
-  color: #000;
+  color: #000 !important;
 }
 
   
