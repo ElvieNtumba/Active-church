@@ -227,11 +227,7 @@ body{
   max-width: 100%;
   /* margin: 0 auto; */
   text-align: center;
-background-image: linear-gradient(
-    rgba(232, 225, 235, 0.623),
-    rgba(240, 239, 240, 0.534)
-  ),
-  url('./images/active-church.jpg');
+  background-image:linear-gradient(rgba(232, 225, 235, 0.623), rgba(240, 239, 240, 0.534)),  url('images/20250530_185454_266.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -594,7 +590,7 @@ footer .copyright {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 30px;
-  color: #000;
+  color: #fff;
 }
 
 .quick-links ul {
@@ -817,7 +813,7 @@ footer .copyright {
   height: 15vh;
 }
 .webelive{
-padding-top: '20px';
+padding-top: 10px;
 }
 
 
@@ -1247,37 +1243,30 @@ padding-top: '20px';
     height: auto;
   }
 
- .main_give_div {
-  flex: 2 1 400px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 50%;
-}
+  .main_give_div {
+    flex: 2 1 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+  }
 
-.eft-section,
-.debit-order-section {
-  /* background-color: #3a3a3a; */
-  padding: 15px;
-  border-radius: 15px;
-  text-align: center;   /* ✅ centers all text inside */
-}
+  .eft-section, .debit-order-section {
+    /* background-color: #3a3a3a; */
+    padding: 20px;
+    border-radius: 15px;
+  }
 
-.eft-section h2,
-.debit-order-section h2 {
-  margin: 0 0 10px 0;
-  font-size: 20px;
-  text-align: center;
-}
+  .eft-section h3, .debit-order-section h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+  }
 
-.eft-section p,
-.debit-order-section p {
-  margin: 5px 0;
-  color: #ccc;
-  font-size: 14px;
-  text-align: center;   /* ✅ ensures paragraphs are centered */
-}
-
+  .eft-section p, .debit-order-section p {
+    margin: 5px 0;
+    color: #ccc;
+    font-size: 14px;
+  }
 
 .give-section-div{
   width: 100%;
@@ -1450,89 +1439,74 @@ padding-top: '20px';
 
 .why-we-give {
   text-align: center;
-  margin: 0 auto;
+  margin: 0px auto;
   max-width: 700px;
   padding: 5% 20px;
-  
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
- 
-.mainimg {
-  background-image: linear-gradient(rgba(7, 7, 7, 0.747), rgba(0, 0, 0, 0.705)),
-    url('images/SnapInsta.to_504484732_18326229409205809_958354511391319144_n.png');
+.mainimg{
+  background-image: linear-gradient(rgba(7, 7, 7, 0.747), rgba(0, 0, 0, 0.705)), url('images/SnapInsta.to_504484732_18326229409205809_958354511391319144_n.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 36vh;
+  height: 60vh;
+}
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;   /* keeps text vertically centered */
-  align-items: center;       /* centers text horizontally */
-  padding: 5%;               /* use relative padding */
-  color: white;
-  text-align: center;        /* center-align text */
+/* Large screens */
+@media (max-width: 1263px) {
+  .mainimg {
+    height: 35vh;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+  .mainimg {
+    height: 35vh;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 768px) {
+  .mainimg {
+    height: 35vh;
+    background-size: contain; /* optional, prevents cropping */
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .mainimg {
+    height: 48vh;
+    background-size: cover;
+  }
 }
 
 .why-we-give h2 {
-  font-size: 2rem;           /* scales with screen */
+  font-size: 2em;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   color: #fff;
 }
 
 .why-we-give .scripture {
   color: white;
   font-weight: bold;
-  font-size: 1.1rem;
-  margin-bottom: 5px;
+  font-size: 1.2em;
+  margin-bottom: 10px;
 }
 
 .why-we-give .reference {
   font-style: italic;
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .why-we-give .explanation {
   color: #fff;
   line-height: 1.6;
-  font-size: 1rem;
-  max-width: 90%;            /* avoids text touching edges */
-}
-
-/* 📱 Responsive adjustments */
-@media (max-width: 768px) {
-  .mainimg {
-    /* height: auto;            allow height to adjust naturally */
-    padding: 10% 5%;
-  }
-
-  .why-we-give h2 {
-    font-size: 1.6rem;
-  }
-
-  .why-we-give .scripture {
-    font-size: 1rem;
-  }
-
-  .why-we-give .explanation {
-    font-size: 0.95rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .why-we-give h2 {
-    font-size: 1.3rem;
-  }
-
-  .why-we-give .scripture {
-    font-size: 0.9rem;
-  }
-
-  .why-we-give .explanation {
-    font-size: 0.85rem;
-  }
+  font-size: 1em;
 }
 
 .containers {
@@ -1647,38 +1621,19 @@ h1 span {
     background-color: #333;
   }
   
-  .contact-info {
-  color: #000;
-  font-size: 16px;
+  .contact-info-title {
+    color: #000 !important;
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
-
-
-.contact-item {
-  display: flex;
-  align-items: flex-start;   /* keeps icon top-aligned with text */
-  margin-bottom: 20px;
-}
-
-.contact-item i {
-   font-size: 18px;
-  margin-right: 10px;        /* space between icon and text */
-  min-width: 20px;           /* keeps icons in one column */
-  color: #000;
-  line-height: 1.4;          /* ✅ balances icon height with text */
-  margin-top: 2px;  
-}
-
-.contact-item div {
-  display: flex;
-  flex-direction: column;    /* keeps label & details stacked */
-}
-
-.contact-item p {
-  margin: 2px 0;             /* remove extra gaps */
-  color: #000;
-}
-
+.contact-address p, .contact-email-info p{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #000; /* Avoid using !important unless necessary */
+    font-size: 16px;
+  }
   
   .map iframe {
     width: 100%;
@@ -1693,71 +1648,54 @@ h1 span {
     color: #000;
 }
 
-/* Label styling */
 .contact-label {
-  font-weight: bold;
-  margin-bottom: 5px;
-  padding-left: 5px;
-}
-
-.contact-social-wrapper {
-  display: flex;
-  flex-direction: column; /* Heading on top, icons below */
-  align-items: flex-start; /* Align everything to the left with text */
-  gap: 8px; /* Space between heading and icons */
-}
-
-.contact-social-title {
-  margin: 0;
-  font-size: 1.2rem;
-  color: #000;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .contact-social-icons {
   display: flex;
-  gap: 12px;
-  align-items: center;
+  gap: 16px;
+  margin-top: 20px;
 }
 
 .contact-social-icons a {
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  text-decoration: none;
   transition: transform 0.3s ease;
-  padding: 0; /* remove extra padding */
-  color: white;
 }
 
 .contact-social-icons .facebook {
   background-color: #3b5998;
+  padding: 10px;
+  border-radius: 50%;
 }
 
 .contact-social-icons .instagram {
   background-color: #e1306c;
+  padding: 10px;
+  border-radius: 50%;
 }
 
 .contact-social-icons .youtube {
   background-color: #ff0000;
+  padding: 10px;
+  border-radius: 50%;
+}
+.contact-map-section {
+    margin-top: 20px;
 }
 
-.contact-social-icons a:hover {
-  transform: scale(1.1);
+.contact-map-frame {
+  width: 100%;
+  height: 200px;
+  border: 0;
 }
-
-/* Mobile responsiveness */
-@media (max-width: 600px) {
-  .contact-social-icons {
-    gap: 8px;
-    flex-wrap: wrap;
-  }
-}
-
-
-
 
 .contactblack {
     background-color: #000;
@@ -1806,26 +1744,23 @@ h1 span {
     height: 30vh;
   }
 
- .Scripture,
-.Salvation,
-.Community,
-.Mission {
-  width: 50%;
-  padding: 2%;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
-  background-color: transparent;
-  backdrop-filter: blur(10px);
+  .Scripture,
+  .Salvation,
+  .Community,
+  .Mission {
+    width: 100%;
+    margin-right: 0; /* remove side spacing on small screens */
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin: 2% 0;
+  }
 
-  /* Optional: center text horizontally */
-  text-align: center;
-}
-
-.Scripture h2,
-.Salvation h2,
-.Community h2,
-.Mission h2 {
-  margin-bottom: 0.5%; /* reduced from 2% */
-}
+  .Scripture h2,
+  .Salvation h2,
+  .Community h2,
+  .Mission h2 {
+    font-size: 18px;
+  }
 
   .Scripture p,
   .Salvation p,
