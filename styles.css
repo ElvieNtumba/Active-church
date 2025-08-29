@@ -874,7 +874,7 @@ padding-top: 10px;
 /* Extra small screens */
 @media (max-width: 480px) {
   .imagesss {
-    height: 85vh;
+    height: 95vh;
     background-size: cover;
     backdrop-filter: blur(2px);
   }
@@ -1936,6 +1936,10 @@ h1 span {
     gap: 20px;
     padding: 0 10px;
     height: 30vh;
+  }
+
+  .yourlife {
+    margin-bottom: 14%;
   }
 
   .Scripture,
