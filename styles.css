@@ -835,8 +835,39 @@ padding-top: '20px';
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 78vh;
+  height: 70vh;
   backdrop-filter: blur(3px);
+}
+
+/* Large screens */
+@media (max-width: 1200px) {
+  .imagesss {
+    height: 70vh;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+  .imagesss {
+    height: 70vh;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 768px) {
+  .imagesss {
+    height: 70vh;
+    background-size: contain; /* optional to prevent cropping */
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .imagesss {
+    height: 85vh;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+  }
 }
 
 .yourlife , .people {
@@ -845,7 +876,7 @@ padding-top: '20px';
     justify-content: center;
     align-items: center;
     height: 20vh;
-    margin-top: 2% ;
+    margin-top: 1% ;
     margin-bottom: 3%;
 }
 
