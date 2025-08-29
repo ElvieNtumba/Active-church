@@ -826,7 +826,7 @@ padding-top: '20px';
   }
   
 .imagesss{
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   background-color: #fff;
   background-image: 
   linear-gradient(rgba(255, 255, 255, 0.781), rgba(255, 255, 255, 0.719)
