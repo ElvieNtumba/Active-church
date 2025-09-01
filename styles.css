@@ -831,7 +831,10 @@ padding-top: 10px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 70vh;
+  height: 71vh;
+  width: 94%;      /* reduce width (try 80%, 70%, or fixed px like 900px) */
+  margin: 0 auto;  /* center horizontally */
+  border-radius: 10px;
   backdrop-filter: blur(3px);
 }
 
@@ -933,7 +936,7 @@ padding-top: 10px;
 }
 
 .card1 {
-  width: 80%;
+  width: 94%;
   margin: 20px auto;
   padding: 16px;
   border: 1px solid #eee;
@@ -1280,12 +1283,16 @@ padding-top: 10px;
   }
 
   .main_give_div {
-    flex: 2 1 400px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 50%;
-  }
+  flex: 2 1 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+  margin: 0 auto; /* centers horizontally */
+  align-items: center; /* centers inner content */
+  text-align: center; /* centers text */
+}
+
 
   .eft-section, .debit-order-section {
     /* background-color: #3a3a3a; */
@@ -1309,6 +1316,9 @@ padding-top: 10px;
   height: 270px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   background-color: #000;
+}
+.bank-fix{
+  padding-right: 43px;
 }
 .give-section-div h1{
   color: white;
@@ -1492,7 +1502,7 @@ padding-top: 10px;
 /* Large screens */
 @media (max-width: 1263px) {
   .mainimg {
-    height: 35vh;
+    height: 40vh;
   }
 }
 
@@ -1927,30 +1937,44 @@ h1 span {
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .yourlife,
   .people {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    padding: 0 10px;
-    height: 30vh;
+    gap: 20px;     
+    margin: 0 auto 20px;
+    padding: 0 15px;
+    height: auto;      /* ✅ no fixed height */
   }
 
   .yourlife {
     margin-bottom: 14%;
   }
 
-  .Scripture,
+  .yourlife,
+.people {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: stretch; /* each card matches height naturally */
+  margin-top: 1%;
+  margin-bottom: 3%;
+  gap: 40px; /* spacing between the two cards */
+  flex-wrap: wrap; /* allows wrapping on small screens */
+  height: auto; /* ✅ let content decide */
+}
+.Scripture,
   .Salvation,
   .Community,
   .Mission {
-    width: 100%;
-    margin-right: 0; /* remove side spacing on small screens */
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    margin: 2% 0;
+    flex: none;        /* ✅ don’t stretch */
+    width: 100%;       /* ✅ take full width on mobile */
+    min-width: auto;   /* ✅ no forced minimum */
+    padding: 15px;     /* ✅ clean padding */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    backdrop-filter: blur(10px);
   }
 
   .Scripture h2,
